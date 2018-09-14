@@ -6,11 +6,9 @@ module.exports = function(app) {
     res.json(friends);
   });
   app.post('/api/friends', function(req, res) {
-    var match = {
-      ultimateScore: 100,
-      name: '',
-      photo: ''
-    };
+    var ultimateScore = 100;
+    var name = '';
+    var photo = '';
     for (var i = 0; i < friends.length; i++) {
       var score = 0;
       for (var j = 0; j < req.body.scores.length; j++) {
@@ -23,6 +21,6 @@ module.exports = function(app) {
       }
     }
     friends.push(req.body);
-    res.json(match);
+    res.json({ name: name, photo: photo });
   });
 };

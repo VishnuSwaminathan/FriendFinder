@@ -1,5 +1,5 @@
 // array of friends
-var friendsarray = [
+var friendsList = [
   {
     name: 'Bot_1',
     photo: 'https://miro.medium.com/max/480/1*paQ7E6f2VyTKXHpR-aViFg.png',
@@ -32,4 +32,4 @@ var friendsarray = [
   }
 ];
 
-module.exports = friendsarray;
+module.exports = friendsList;

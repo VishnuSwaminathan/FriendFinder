@@ -15,9 +15,9 @@ module.exports = function(app) {
         score = score + Math.abs(friends[i].scores[j] - req.body.scores[j]);
       }
       if (score <= ultimateScore) {
-        match.name = friends[i].name;
-        match.photo = friends[i].photo;
-        match.ultimateScore = score;
+        name = friends[i].name;
+        photo = friends[i].photo;
+        ultimateScore = score;
       }
     }
     friends.push(req.body);

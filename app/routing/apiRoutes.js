@@ -23,6 +23,7 @@ module.exports = function(app) {
       }
     }
     friends.push(req.body);
+
     res.json({ name: name, photo: photo });
   });
 };
